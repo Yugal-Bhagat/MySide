@@ -116,16 +116,12 @@ function App() {
   animate={{ scale: 1, opacity: 1 }}
   transition={{ duration: 0.5 }}
 >
-  <video
-    src="./image/Akanksha10.jpg.mp4" // Replace with your video path
-    style={{ width: '100%', height: '40vh' }} // Responsive width and height
+<video src={`${import.meta.env.BASE_URL}/image/Akanksha10.jpg.mp4`}  style={{ width: '100%', height: '40vh' }} // Responsive width and height
     autoPlay // Autoplay the video
     loop // Loop the video
     muted // Mute the video (required for autoplay in most browsers)
     controls // Show video controls
-  >
-    Your browser does not support the video tag.
-  </video>
+   />
 </motion.div>
 
         <Candles onBlowOut={() => setCandlesBlown(true)} />
